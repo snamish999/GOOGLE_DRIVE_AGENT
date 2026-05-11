@@ -1,4 +1,4 @@
-# 🗂️ TailorTalk Drive Agent
+# 🗂️ Google Drive Agent
 
 A conversational AI agent that searches, filters, and discovers files in Google Drive through natural language chat.
 
