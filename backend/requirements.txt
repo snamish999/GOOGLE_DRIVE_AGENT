@@ -1,0 +1,14 @@
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+python-dotenv==1.0.1
+
+langchain==0.2.5
+langchain-google-genai==1.0.6
+langchain-groq==0.1.5
+langgraph==0.1.9
+
+google-api-python-client==2.134.0
+google-auth==2.30.0
+google-auth-httplib2==0.2.0
+
+httpx>=0.28.1,<0.29
