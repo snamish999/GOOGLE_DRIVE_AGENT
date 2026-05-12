@@ -17,7 +17,6 @@ from langchain_core.messages import (
     ToolMessage,
 )
 from langchain_core.tools import tool
-from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_groq import ChatGroq
 from langgraph.graph import END, StateGraph
 from langgraph.graph.message import add_messages
@@ -84,6 +83,7 @@ def _build_llm():
 
     gemini_key = os.getenv("GEMINI_API_KEY", "").strip()
     if gemini_key:
+        from langchain_google_genai import ChatGoogleGenerativeAI
         return ChatGoogleGenerativeAI(
             model="gemini-1.5-flash-latest",
             google_api_key=gemini_key,
